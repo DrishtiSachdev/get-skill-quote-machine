@@ -4,8 +4,9 @@ import COLOR_ARRAY from './colorArray.js';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import {faQuoteLeft} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faTwitter)
+library.add (faTwitter);
 
 
 
@@ -52,11 +53,8 @@ function App() {
       
       <div id="quote-box" style={{color:accentColor}}> 
        
-     
-        <p class="quotefill" id="text">
-        {quote}
+        <h2 id="text"><span id="quote-icon"><FontAwesomeIcon icon={faQuoteLeft}/></span>{quote}</h2>
         
-        </p>
         <p id="author">
          -{author}
         </p>
