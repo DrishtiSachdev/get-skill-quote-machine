@@ -1,0 +1,92 @@
+@media only screen and (max-width:600px){
+  .buttons{
+    flex-direction:column-reverse;
+  }
+  #new-quote{
+    margin-bottom:10px;
+  }
+}
+
+.App {
+  text-align: center;
+  #quote-box{
+    padding:25px;
+    background-color:white;
+    color:black;
+    border-radius:10px;
+    
+    #text{
+      font-weight: 500;
+      font-size: 1.75em;
+      margin-bottom:0px;
+      #quote-icon{
+        margin-right:10px;
+      }
+    }
+    q{
+      quotes: '\201c' '\201d';
+    }
+    q::before{
+      content: open-quote;
+      font-size:100px;
+    }
+    #author{
+      margin-top:0px;
+      text-align:end;
+      font-size:1em;
+    }
+    
+
+  }
+  .buttons{
+    display:flex;
+    justify-content:space-between;
+    min-height:50px;
+
+    #tweet-quote{
+      display:flex;
+      align-self:center;
+      justify-content:center;
+      padding:10px;
+      color:white;
+      border-radius:10px;
+      max-width: 50px;
+      height:100%;
+
+      
+    }
+    #new-quote{
+      display:inline-block;
+      color:white;
+      padding:10px;
+      font-size:16px;
+      cursor:pointer;
+      border-radius: 10px;
+      border:none;
+      font-size: 16px;
+    }
+   
+      
+  }
+  
+  
+
+  .App-header {
+    padding:10px;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+}
+
+
+
+
+
+
+
